@@ -1,22 +1,28 @@
 package br.com.edsoft.tasks.funcional;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TasksTest {
-	public WebDriver acessaAplicacao() {
-		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://localhost:8001/tasks/");
+	public WebDriver acessaAplicacao() throws MalformedURLException {
+//		WebDriver driver = new ChromeDriver();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.107:4444/wd/hub"), cap);
+//		driver.navigate().to("http://localhost:8001/tasks/");
+		driver.navigate().to("http://192.168.0.107:8001/tasks/");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		return driver;
 	}
 
 	@Test
-	public void deveSalvaTarefa() {
+	public void deveSalvaTarefa() throws MalformedURLException {
 		WebDriver driver = acessaAplicacao();
 		try {
 			driver.findElement(By.linkText("Add Todo")).click();
@@ -29,7 +35,7 @@ public class TasksTest {
 	}
 
 	@Test
-	public void naoDeveSalvaTarafaSemDescricao() {
+	public void naoDeveSalvaTarafaSemDescricao() throws MalformedURLException {
 		WebDriver driver = acessaAplicacao();
 		try {
 			driver.findElement(By.linkText("Add Todo")).click();
@@ -41,7 +47,7 @@ public class TasksTest {
 	}
 
 	@Test
-	public void naoDeveSalvaTarafaSemData() {
+	public void naoDeveSalvaTarafaSemData() throws MalformedURLException {
 		WebDriver driver = acessaAplicacao();
 		try {
 			driver.findElement(By.linkText("Add Todo")).click();
@@ -53,7 +59,7 @@ public class TasksTest {
 	}
 
 	@Test
-	public void naoDeveSalvaTarafaComDataPassada() {
+	public void naoDeveSalvaTarafaComDataPassada() throws MalformedURLException {
 		WebDriver driver = acessaAplicacao();
 		try {
 			driver.findElement(By.linkText("Add Todo")).click();
