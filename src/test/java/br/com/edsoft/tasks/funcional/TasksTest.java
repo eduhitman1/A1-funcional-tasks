@@ -72,19 +72,19 @@ public class TasksTest {
 		}
 	}
 	
-	@Test
-	public void deveSalvaTarafaComDataPassada() throws MalformedURLException {
-		WebDriver driver = acessaAplicacao();
-		try {
-			driver.findElement(By.linkText("Add Todo")).click();
-			driver.findElement(By.id("task")).sendKeys("teste5");
-			driver.findElement(By.id("dueDate")).sendKeys("01/10/2010");
-			driver.findElement(By.id("saveButton")).click();
-			
-			driver.findElement(By.xpath("//a[@class='btn btn-outline-danger btn-sm']")).click();
-		} finally {
-			driver.quit();
-		}
-	}
+//	@Test
+//	public void deveSalvaTarafaComDataPassada() throws MalformedURLException {
+//		WebDriver driver = acessaAplicacao();
+//		try {
+//			driver.findElement(By.linkText("Add Todo")).click();
+//			driver.findElement(By.id("task")).sendKeys("teste5");
+//			driver.findElement(By.id("dueDate")).sendKeys("01/10/2010");
+//			driver.findElement(By.id("saveButton")).click();
+//			
+//			driver.findElement(By.xpath("//a[@class='btn btn-outline-danger btn-sm']")).click();
+//		} finally {
+//			driver.quit();
+//		}
+//	}
 	
 }
