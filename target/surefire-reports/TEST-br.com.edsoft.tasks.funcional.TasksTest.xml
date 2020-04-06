@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.com.edsoft.tasks.funcional.TasksTest" time="6.968" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.com.edsoft.tasks.funcional.TasksTest" time="16.204" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_181\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\eduardo.matias\Documents\eclipce-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5990775752187678152.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\eduardo.matias\Documents\eclipce-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2203931912371145211.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\eduardo.matias\AppData\Local\Android\Sdk\platform-tools;C:\Users\eduardo.matias\AppData\Local\Android\Sdk\tools;C:\Users\eduardo.matias\AppData\Local\Android\Sdk\tools\bin;C:\Users\eduardo.matias\Documents\DRIVERS;C:\allure-2.7.0\bin;C:\marionette;C:\Program Files\Java\jre1.8.0_181\bin;C:\Users\eduardo.matias\Documents\SOFTWARES &amp; SERVIDORES\MAVEN\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\eduardo.matias\Documents\SOFTWARES &amp; SERVIDORES\VSCODE\bin;C:\Users\eduardo.matias\scoop\shims;C:\Users\eduardo.matias\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Users\eduardo.matias\Documents\SOFTWARES &amp; SERVIDORES\MAVEN\apache-maven-3.6.2\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Users\eduardo.matias\Documents\SOFTWARES &amp; SERVIDORES\APACHE\apache-ant-1.9.14\bin;C:\Program Files (x86)\OpenCobolIDE\GnuCOBOL\bin;C:\Program Files\Docker Toolbox;C:\Users\eduardo.matias\eclipse\jee-2019-06\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jre1.8.0_181"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,8 +60,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="naoDeveSalvaTarafaSemData" classname="br.com.edsoft.tasks.funcional.TasksTest" time="4.828"/>
-  <testcase name="naoDeveSalvaTarafaComDataPassada" classname="br.com.edsoft.tasks.funcional.TasksTest" time="4.988"/>
-  <testcase name="deveSalvaTarefa" classname="br.com.edsoft.tasks.funcional.TasksTest" time="6.967"/>
-  <testcase name="naoDeveSalvaTarafaSemDescricao" classname="br.com.edsoft.tasks.funcional.TasksTest" time="6.792"/>
+  <testcase name="deveSalvaTarefa" classname="br.com.edsoft.tasks.funcional.TasksTest" time="8.326"/>
+  <testcase name="naoDeveSalvaTarafaSemDescricao" classname="br.com.edsoft.tasks.funcional.TasksTest" time="9.882"/>
+  <testcase name="naoDeveSalvaTarafaComDataPassada" classname="br.com.edsoft.tasks.funcional.TasksTest" time="16.203"/>
+  <testcase name="naoDeveSalvaTarafaSemData" classname="br.com.edsoft.tasks.funcional.TasksTest" time="6.275"/>
 </testsuite>

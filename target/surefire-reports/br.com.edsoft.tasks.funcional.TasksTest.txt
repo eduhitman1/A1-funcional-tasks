@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.edsoft.tasks.funcional.TasksTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.968 s - in br.com.edsoft.tasks.funcional.TasksTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.204 s - in br.com.edsoft.tasks.funcional.TasksTest
